@@ -65,5 +65,12 @@ deac() {
   source deactivate
 }
 
+export GUROBI_HOME="/Library/gurobi702/mac64"
+export MOSEK_HOME="/Users/junhyeok/mosek/8/tools/platform/osx64x86"
+export PATH=$PATH:/Users/junhyeok/mosek/8/tools/platform/osx64x86/bin
+
+export CLICOLOR=1;
+export LSCOLORS=exfxcxdxbxegedabagacad;
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
