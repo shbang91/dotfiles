@@ -83,12 +83,42 @@ snippet v3
 Eigen::Vector3d $1
 endsnippet
 
+snippet v6
+Eigen::Vector6d $1
+endsnippet
+
+snippet qd
+Eigen::Quaternion<double> $1
+endsnippet
+
 snippet iso
 Eigen::Isometry3d $1
 endsnippet
 
+snippet t1
+std::chrono::high_resolution_clock::time_point $1 = std::chrono::high_resolution_clock::now();
+endsnippet
+
+snippet t2
+std::chrono::high_resolution_clock::time_point $1 = std::chrono::high_resolution_clock::now();
+std::chrono::duration<double> time_span1 = std::chrono::duration_cast< std::chrono::duration<double> >($2 - $3);
+std::cout << "$4 took me " << time_span1.count()*1000.0 << "ms."<<std::endl;;
+endsnippet
+
 snippet ex
 exit(0);
+endsnippet
+
+snippet pp
+myUtils::pretty_print($1, std::cout, "$2");
+endsnippet
+
+snippet dv
+dynacore::Vector
+endsnippet
+
+snippet dm
+dynacore::Matrix
 endsnippet
 
 # vim:ft=snippets:

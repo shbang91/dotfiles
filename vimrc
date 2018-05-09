@@ -81,6 +81,7 @@ Plug 'maralla/completor.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'davidhalter/jedi-vim'
 Plug 'rhysd/vim-grammarous'
+Plug 'junegunn/vim-xmark', { 'do': 'make' }
 call plug#end()
 
 
