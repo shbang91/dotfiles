@@ -17,7 +17,7 @@ ln -sf $BASE/vimrc ~/.vimrc
 
 vim +PlugInstall +qall
 
-for snip in cpp.snippets python.snippets; do
+for snip in cpp.snippets python.snippets bib.snippets markdown.snippets texmath.snippets c.snippets vim.snippets tex.snippets; do
   rm ~/.vim/plugged/vim-snippets/UltiSnips/$snip
   ln -sfv $BASE/snippets/$snip ~/.vim/plugged/vim-snippets/UltiSnips/$snip
 done

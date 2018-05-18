@@ -119,15 +119,12 @@ set laststatus=2
 highlight CursorLine cterm=none
 
 " 2. C,C++
-let g:UltiSnipsUsePythonVersion=2
+let g:UltiSnipsUsePythonVersion=3
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-n>"
 let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
-"TODO : high sierra
-let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
-"let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
-"let g:completor_clang_binary = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 
 let g:cpp_class_scope_highlight=1
 let g:cpp_member_variable_highlight=1
