@@ -41,32 +41,39 @@ ccmake() {
   CXX="$HOME/dotfiles/clang/cc_args.py clang++" cmake ..
 }
 
-rlenv() {
-  source activate rllab3
-}
-
-opensimenv() {
-  source activate opensim-rl
-}
-
-bsenv () {
-  source activate baseline
-}
-
-pyOp() {
-  source activate pyOp
-}
-
-dart() {
-  source activate dart
+# Anaconda Virtual Env
+drake() {
+  source activate drake
+  #export PYTHONPATH=~/Repository/drake-build/install/lib/python2.7/site-packages:${PYTHONPATH}
+  export PYTHONPATH=~/Repository/underactuated/src:${PYTHONPATH}
+  export PYTHONPATH=/opt/drake/lib/python2.7/site-packages:${PYTHONPATH}
+  export PATH=/usr/local/opt/python/libexec/bin:${PATH}
 }
 
 deac() {
   source deactivate
 }
 
-export GUROBI_HOME="/Library/gurobi702/mac64"
+# Drake : Call Python Client
+drake_plot() {
+    cd ~/Repository/drake && bazel run common/proto:call_python_client_cli
+}
+
+drake_visualize() {
+    /opt/drake/bin/drake-visualizer
+}
+
+make_video() {
+    ffmpeg -i image%06d.png video.avi
+}
+
+# Gurobi
+export GUROBI_HOME="/Library/gurobi800/mac64"
+export GRB_LICENSE_FILE=/Users/junhyeokahn/gurobi/gurobi.lic
+
+# Mosek
 export MOSEK_HOME="/Users/junhyeok/mosek/8/tools/platform/osx64x86"
+export MOSEKLM_LICENSE_FILE=/Users/junhyeokahn/mosek/mosek.lic
 export PATH=$PATH:/Users/junhyeok/mosek/8/tools/platform/osx64x86/bin
 
 export CLICOLOR=1;
