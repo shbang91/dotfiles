@@ -72,9 +72,9 @@ export GUROBI_HOME="/Library/gurobi800/mac64"
 export GRB_LICENSE_FILE=/Users/junhyeokahn/gurobi/gurobi.lic
 
 # Mosek
-export MOSEK_HOME="/Users/junhyeok/mosek/8/tools/platform/osx64x86"
+export MOSEK_HOME="/Users/junhyeokahn/mosek/8/tools/platform/osx64x86"
 export MOSEKLM_LICENSE_FILE=/Users/junhyeokahn/mosek/mosek.lic
-export PATH=$PATH:/Users/junhyeok/mosek/8/tools/platform/osx64x86/bin
+export PATH=$PATH:/Users/junhyeokahn/mosek/8/tools/platform/osx64x86/bin
 
 export CLICOLOR=1;
 export LSCOLORS=exfxcxdxbxegedabagacad;
