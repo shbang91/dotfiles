@@ -44,6 +44,7 @@ set clipboard=unnamed
 let mapleader=','
 let maplocalleader=','
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+nnoremap <Leader>e :e %:h
 nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
 """""""""""
