@@ -75,6 +75,7 @@ export GRB_LICENSE_FILE=/Users/junhyeokahn/gurobi/gurobi.lic
 export MOSEK_HOME="/Users/junhyeokahn/mosek/8/tools/platform/osx64x86"
 export MOSEKLM_LICENSE_FILE=/Users/junhyeokahn/mosek/mosek.lic
 export PATH=$PATH:/Users/junhyeokahn/mosek/8/tools/platform/osx64x86/bin
+export DYLD_LIBRARY_PATH="/Users/junhyeokahn/mosek/8/tools/platform/osx64x86/bin":"$DYLD_LIBRARY_PATH"
 
 export CLICOLOR=1;
 export LSCOLORS=exfxcxdxbxegedabagacad;
