@@ -82,6 +82,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'davidhalter/jedi-vim'
 Plug 'rhysd/vim-grammarous'
 Plug 'junegunn/vim-xmark', { 'do': 'make' }
+Plug 'tpope/vim-eunuch'
 call plug#end()
 
 
