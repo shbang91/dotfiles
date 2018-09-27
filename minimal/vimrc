@@ -80,6 +80,7 @@ Plug 'tpope/vim-surround'
 Plug 'maralla/completor.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'davidhalter/jedi-vim'
+Plug 'tpope/vim-eunuch'
 call plug#end()
 
 
@@ -147,3 +148,4 @@ let g:vimtex_view_method='skim'
 " 5. Text
 au BufNewFile,BufRead *.txt set filetype=journal
 au BufNewFile,BufRead CMakeLists.txt set filetype=cmake
+au BufNewFile,BufRead *.urdf set filetype=xml
