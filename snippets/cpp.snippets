@@ -125,4 +125,12 @@ snippet once
 #pragma once
 endsnippet
 
+snippet read
+try {
+    $1
+} catch(std::runtime_error& e) {
+    std::cout << "Error reading parameter ["<< e.what() << "] at file: [" << __FILE__ << "]" << std::endl << std::endl;
+}
+endsnippet
+
 # vim:ft=snippets:

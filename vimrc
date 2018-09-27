@@ -81,7 +81,7 @@ Plug 'maralla/completor.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'davidhalter/jedi-vim'
 Plug 'rhysd/vim-grammarous'
-Plug 'junegunn/vim-xmark', { 'do': 'make' }
+Plug 'junhyeokahn/vim-xmark', { 'do': 'make' }
 call plug#end()
 
 
@@ -151,6 +151,7 @@ let g:vimtex_indent_enabled = 0
 au BufNewFile,BufRead *.txt set filetype=journal
 au BufNewFile,BufRead CMakeLists.txt set filetype=cmake
 au BufNewFile,BufRead *.urdf set filetype=xml
+hi link markdownItalic Normal
 
 " 6. Grammarous
 let g:grammarous#default_comments_only_filetypes = {

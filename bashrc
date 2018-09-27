@@ -41,13 +41,28 @@ ccmake() {
   CXX="$HOME/dotfiles/clang/cc_args.py clang++" cmake ..
 }
 
+function gpm() {
+  git add -A
+  git commit -a -m $1
+  git push origin master
+}
+
 # Anaconda Virtual Env
+tf() {
+  source activate tensorflow
+}
+
 drake() {
   source activate drake
-  #export PYTHONPATH=~/Repository/drake-build/install/lib/python2.7/site-packages:${PYTHONPATH}
-  export PYTHONPATH=~/Repository/underactuated/src:${PYTHONPATH}
-  export PYTHONPATH=/opt/drake/lib/python2.7/site-packages:${PYTHONPATH}
-  export PATH=/usr/local/opt/python/libexec/bin:${PATH}
+}
+
+tnmpc() {
+  source activate tnmpc
+  export PYTHONPATH=$PYTHONPATH:/Users/junhyeokahn/Repository/jhu
+}
+
+timeopt() {
+    source activate timeopt
 }
 
 deac() {
