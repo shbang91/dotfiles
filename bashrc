@@ -54,15 +54,17 @@ tf() {
 
 drake() {
   source activate drake
+  export PYTHONPATH=/Users/junhyeokahn/Repository/drake-build/install/lib/python2.7/site-packages:${PYTHONPATH}
+
+}
+
+pwa() {
+  source activate pwa-control
 }
 
 tnmpc() {
   source activate tnmpc
   export PYTHONPATH=$PYTHONPATH:/Users/junhyeokahn/Repository/jhu
-}
-
-timeopt() {
-    source activate timeopt
 }
 
 deac() {
@@ -71,11 +73,11 @@ deac() {
 
 # Drake : Call Python Client
 drake_plot() {
-    cd ~/Repository/drake && bazel run common/proto:call_python_client_cli
+    ~/Repository/drake/bazel-bin/common/proto/call_python_client_cli
 }
 
 drake_visualize() {
-    /opt/drake/bin/drake-visualizer
+    ~/Repository/drake/bazel-bin/toos/drake-visualizer
 }
 
 make_video() {
