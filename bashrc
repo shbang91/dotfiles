@@ -55,12 +55,26 @@ tf() {
 drake() {
   source activate drake
   export PYTHONPATH=/Users/junhyeokahn/Repository/drake-build/install/lib/python2.7/site-packages:${PYTHONPATH}
-
 }
 
 pwa() {
   source activate pwa-control
 }
+
+sym() {
+  source activate sym_walking
+  export PYTHONPATH=/anaconda2/envs/sym_walking/lib/python3.6/site-packages:$PYTHONPATH
+}
+
+append_pwd() {
+  export PYTHONPATH=$pwd:$PYTHONPATH
+}
+
+myenv() {
+  source activate myenv
+  export PYTHONPATH=/anaconda2/envs/myenv/lib/python3.6/site-packages:$PYTHONPATH
+}
+
 
 tnmpc() {
   source activate tnmpc
