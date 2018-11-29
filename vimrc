@@ -18,7 +18,8 @@ set smartindent
 set pastetoggle=<F8>
 set nowrap
 set textwidth=0
-set cursorline
+"set cursorline
+"set lazyredraw
 set colorcolumn=80
 set tabstop=4
 set shiftwidth=4

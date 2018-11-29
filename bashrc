@@ -75,6 +75,10 @@ myenv() {
   export PYTHONPATH=/anaconda2/envs/myenv/lib/python3.6/site-packages:$PYTHONPATH
 }
 
+dartenv() {
+  source activate dartenv
+}
+
 
 tnmpc() {
   source activate tnmpc

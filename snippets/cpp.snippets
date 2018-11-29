@@ -113,6 +113,14 @@ snippet pp
 myUtils::pretty_print($1, std::cout, "$2");
 endsnippet
 
+snippet pc
+myUtils::pretty_constructor($1, "$2");
+endsnippet
+
+snippet cp
+myUtils::color_print(myColor::$1, "$2");
+endsnippet
+
 snippet dv
 dynacore::Vector
 endsnippet
