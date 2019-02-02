@@ -52,22 +52,13 @@ tf() {
   source activate tensorflow
 }
 
-drake() {
-  source activate drake
-  export PYTHONPATH=/Users/junhyeokahn/Repository/drake-build/install/lib/python2.7/site-packages:${PYTHONPATH}
-}
-
-pwa() {
-  source activate pwa-control
-}
-
 sym() {
   source activate sym_walking
   export PYTHONPATH=/anaconda2/envs/sym_walking/lib/python3.6/site-packages:$PYTHONPATH
 }
 
 append_pwd() {
-  export PYTHONPATH=$pwd:$PYTHONPATH
+  export PYTHONPATH=${pwd}:$PYTHONPATH
 }
 
 myenv() {
@@ -79,23 +70,12 @@ dartenv() {
   source activate dartenv
 }
 
-
-tnmpc() {
-  source activate tnmpc
-  export PYTHONPATH=$PYTHONPATH:/Users/junhyeokahn/Repository/jhu
-}
-
 deac() {
   source deactivate
 }
 
-# Drake : Call Python Client
-drake_plot() {
-    ~/Repository/drake/bazel-bin/common/proto/call_python_client_cli
-}
-
-drake_visualize() {
-    ~/Repository/drake/bazel-bin/toos/drake-visualizer
+baselines() {
+    source activate baselines
 }
 
 make_video() {
