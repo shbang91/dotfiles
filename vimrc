@@ -1,11 +1,11 @@
-"===========================================
+" =============================================================================
 " .vimrc
 " Junhyeok Ahn ( junhyeokahn91@gmail.com )
-"===========================================
+" =============================================================================
 
-"""""""""""""""""""
-" General Setting "
-"""""""""""""""""""
+" =============================================================================
+" Plugin Setting
+" =============================================================================
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
@@ -48,9 +48,9 @@ nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 nnoremap <Leader>e :e %:h
 nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
-"""""""""""
-" Plugins "
-"""""""""""
+" =============================================================================
+" Plugins
+" =============================================================================
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/seoul256.vim'
@@ -84,12 +84,13 @@ Plug 'davidhalter/jedi-vim'
 Plug 'rhysd/vim-grammarous'
 Plug 'junhyeokahn/vim-xmark', { 'do': 'make' }
 Plug 'tpope/vim-eunuch'
+Plug 'machakann/vim-highlightedyank'
 call plug#end()
 
 
-""""""""""""""""""
-" Plugin Setting "
-""""""""""""""""""
+" =============================================================================
+" Plugin Setting
+" =============================================================================
 " 0. General
 let Grep_Default_Options='-rn'
 nnoremap <silent> <F3> :Rgrep<CR>
