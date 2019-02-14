@@ -82,6 +82,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'davidhalter/jedi-vim'
 Plug 'tpope/vim-eunuch'
 Plug 'machakann/vim-highlightedyank'
+Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 
@@ -150,3 +151,9 @@ let g:vimtex_view_method='skim'
 au BufNewFile,BufRead *.txt set filetype=journal
 au BufNewFile,BufRead CMakeLists.txt set filetype=cmake
 au BufNewFile,BufRead *.urdf set filetype=xml
+
+" 6. Clang Format
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+autocmd FileType c,cpp,objc ClangFormatAutoEnable
+nmap <Leader>C :ClangFormatAutoToggle<CR>

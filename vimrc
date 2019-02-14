@@ -85,6 +85,7 @@ Plug 'rhysd/vim-grammarous'
 Plug 'junhyeokahn/vim-xmark', { 'do': 'make' }
 Plug 'tpope/vim-eunuch'
 Plug 'machakann/vim-highlightedyank'
+Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 
@@ -182,3 +183,9 @@ function! g:grammarous#hooks.on_reset(errs) abort
     nunmap <buffer><C-i> <Plug>(grammarous-open-info-window)
     nunmap <buffer><C-r> <Plug>(grammarous-reset)
 endfunction
+
+" 7. Clang Format
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+autocmd FileType c,cpp,objc ClangFormatAutoEnable
+nmap <Leader>C :ClangFormatAutoToggle<CR>
