@@ -11,7 +11,6 @@ BASE=$(pwd)
 
 echo 'setxkbmap -option caps:ctrl_modifier' >> ~/.bashrc
 echo 'alias tmux="tmux-next"' >> ~/.bashrc
-echo 'alias tmux="tmux-next"' >> ~/.bashrc
 echo 'alias matlab="matlab -softwareopengl"' >> ~/.bashrc
 
 for rc in vimrc bash_profile bash_prompt tmux.conf; do
@@ -22,7 +21,7 @@ done
 
 sudo add-apt-repository ppa:pi-rho/dev
 sudo apt-get update
-sudo apt-get install tmux-next=2.7~20190120~bzr4213+21-1ubuntu1~ppa0~ubuntu16.04.1
+sudo apt-get install tmux-next=2.7~20190405~bzr4291+21-1ubuntu1~ppa0~ubuntu16.04.1
 sudo apt-get install curl
 sudo apt-get install vim-nox
 sudo apt-get install ctags
