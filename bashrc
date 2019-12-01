@@ -47,49 +47,6 @@ function gpm() {
   git push origin master
 }
 
-# Anaconda Virtual Env
-tf() {
-  source activate tensorflow
-}
-
-sym() {
-  source activate sym_walking
-  export PYTHONPATH=/anaconda2/envs/sym_walking/lib/python3.6/site-packages:$PYTHONPATH
-}
-
-append_pwd() {
-  export PYTHONPATH=${pwd}:$PYTHONPATH
-}
-
-myenv() {
-  source activate myenv
-  export PYTHONPATH=/anaconda2/envs/myenv/lib/python3.6/site-packages:$PYTHONPATH
-}
-
-dartenv() {
-  source activate dartenv
-}
-
-deac() {
-  source deactivate
-}
-
-baselines() {
-    source activate baselines
-}
-
-make_video() {
-    ffmpeg -r 60 -f image2 -s 1920x1080 -i image%06d.png -vcodec libx264 -crf 25  -pix_fmt yuv420p video.mp4
-}
-
-rl() {
-    source activate rl
-}
-
-pybullet_env() {
-    source activate pybullet_env
-}
-
 # Gurobi
 export GUROBI_HOME="/Library/gurobi800/mac64"
 export GRB_LICENSE_FILE=/Users/junhyeokahn/gurobi/gurobi.lic

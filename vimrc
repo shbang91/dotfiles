@@ -86,6 +86,7 @@ Plug 'junhyeokahn/vim-xmark', { 'do': 'make' }
 Plug 'tpope/vim-eunuch'
 Plug 'machakann/vim-highlightedyank'
 Plug 'rhysd/vim-clang-format'
+Plug 'psliwka/vim-smoothie'
 call plug#end()
 
 
