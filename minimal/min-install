@@ -10,7 +10,6 @@ cd $(dirname $BASH_SOURCE)
 BASE=$(pwd)
 
 echo 'setxkbmap -option caps:ctrl_modifier' >> ~/.bashrc
-echo 'alias tmux="tmux-next"' >> ~/.bashrc
 echo 'alias matlab="matlab -softwareopengl"' >> ~/.bashrc
 
 for rc in vimrc bash_profile bash_prompt tmux.conf; do
