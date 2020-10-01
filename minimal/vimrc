@@ -72,7 +72,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'rhysd/clever-f.vim'
 Plug 'majutsushi/tagbar'
 Plug 'hdima/python-syntax'
-Plug 'lervag/vimtex'
+"Plug 'lervag/vimtex'
 Plug 'junegunn/vim-journal'
 Plug 'junegunn/goyo.vim'
 Plug 'dhruvasagar/vim-table-mode'
@@ -140,9 +140,9 @@ let g:jedi#popup_on_dot=0
 let g:jedi#completions_enabled=0
 
 " 4. Latex
-let g:vimtex_compiler_latexmk={'callback':0, 'continuous':0}
-let g:vimtex_quickfix_open_on_warning=0
-let g:vimtex_view_method='skim'
+"let g:vimtex_compiler_latexmk={'callback':0, 'continuous':0}
+"let g:vimtex_quickfix_open_on_warning=0
+"let g:vimtex_view_method='skim'
 
 " 5. Text
 au BufNewFile,BufRead *.txt set filetype=journal
