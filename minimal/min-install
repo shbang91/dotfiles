@@ -27,6 +27,6 @@ sudo apt-get install clang-3.8
 source ./min-install-vim
 source ~/dotfiles/seoul256-gnome-terminal/seoul256-dark.sh
 
-git config --global user.email "junhyeokahn91@gmail.com"
-git config --global user.name "junhyeokahn"
+git config --global user.email "bangsh0718@gmail.com"
+git config --global user.name "shbang91"
 # TODO : tmux conf copy mode, combine for *nix, clang
